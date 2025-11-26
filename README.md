@@ -1,23 +1,28 @@
-# Fake News Detection
+#Fake News Detection
+##Overview
+This project uses machine learning to classify news articles as real or fake. It leverages TF-IDF vectorization and Logistic Regression to achieve high accuracy on the Fake vs. Real News dataset.
 
-## Overview
-This project uses machine learning to classify news articles as real or fake.
+##Dataset
+Source: Kaggle Fake and Real News Dataset
 
-## Dataset
-- Source: Kaggle Fake and Real News Dataset
+##Steps
+Data loading and exploration
 
-## Steps
-1. Data loading and exploration
-2. Text preprocessing
-3. Model training (Logistic Regression)
-4. Model evaluation
+Text preprocessing (cleaning, lowercasing, removing stopwords)
 
-## How to Run
-1. Install requirements: `pip install -r requirements.txt`
-2. Run the colab notebook: `https://colab.research.google.com/drive/1T2P_wka-eUyN-yBtA9cuXD4RsupS8yAL#scrollTo=Vh8Yijank87D`
+Stratified K-Fold Cross-Validation (5 folds)
 
-## Results
-- Accuracy: 99%
-- Precision: 99%
-- Recall: 99%
-- F1-score: 99%
+Model training and evaluation
+
+##Results
+Average Accuracy: 98.9%
+
+#Precision, Recall, F1-score: ~99% for both fake and real news
+
+##How to Run
+Install requirements: pip install -r requirements.txt
+##Open the notebook in Google Colab:
+https://colab.research.google.com/drive/1ZIPbtt85WUh3-ZjMFE20t6syFKpPKsxe#scrollTo=GQbFJI7HVqlp
+
+About
+This project demonstrates the application of NLP and machine learning techniques to identify fake news, a crucial task in today’s digital world.
